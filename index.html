@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Burger</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row mb-5 mt-2">
+            <div class="col-12">
+                <h1>CREA IL TUO HAMBURGER</h1>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12">
+                <input type="text" id="nome-hamburger" placeholder="Nome burger">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h4>INGREDIENTI AGGIUNTIVI (2.50 &euro; OGNUNO) </h4>
+            </div>
+        </div>
+        
+        <div class="row mb-5">
+            <div class="col-6">
+                <input class="ingrediente" type="checkbox">
+                <label for="ingrediente-singolo"> cheddar</label>
+            </div>
+            <div class="col-6">
+                <input class="ingrediente" type="checkbox">
+                <label for="ingrediente-singolo"> pomodoro</label>
+            </div>
+            <div class="col-6">
+                <input class="ingrediente" type="checkbox">
+                <label for="ingrediente-singolo">  lattuga</label>
+            </div>
+            <div class="col-6">
+                <input class="ingrediente" type="checkbox">
+                <label for="ingrediente-singolo">  bacon</label>
+            </div>
+            <div class="col-6">
+                <input class="ingrediente" type="checkbox">
+                <label for="ingrediente-singolo"> uovo</label>
+            </div>
+            <div class="col-6">
+                <input class="ingrediente" type="checkbox">
+                <label for="ingrediente-singolo"> ketchup</label>
+            </div>
+           
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3>Sconto coupon</h3>
+                <input type="text" id="coupon" placeholder="Inserisci il tuo coupon">
+                <p class="text-success" id="valid-coupon"></p>
+                <p class="text-danger" id="unvalid-coupon"></p>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <button id="bottone-prezzo" type="button"> Calcola il prezzo del tuo panino</button>
+            </div>
+        </div>
+        
+
+        
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2 id="scritta-prezzo-finale"></h2>
+                </div>
+                <div class="col-6">
+                    <h2 id="prezzo-finale"></h2>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    
+
+
+<script type="text/javascript" src="js/myscript.js"></script>
+</body>
+</html>

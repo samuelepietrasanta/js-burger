@@ -1,4 +1,4 @@
-let costoBase = 10;
+
 
 let listaCouponValidi = ["Euro2020" , "PanDiStelleAdventure" , "Melinda2k21"];
 
@@ -13,6 +13,7 @@ bottone.addEventListener('click',
         if (nomeBurgerElement.value.length === 0){
             alert("Devi dare un nome al tuo panino");
         }else{
+            let costoBase = 10;
             IngredientiAggiuntivi = document.getElementsByClassName("ingrediente");
 
             for (i = 0; i < IngredientiAggiuntivi.length ; i++){
@@ -25,14 +26,15 @@ bottone.addEventListener('click',
             }
             if (listaCouponValidi.includes(coupon.value)){
                 costoBase = costoBase * 0.8;
-                document.getElementById("valid-coupon").innerHTML = "Coupon valido, hai diritto ad uno sconto del 20%"
+                document.getElementById("valid-coupon").innerHTML = "Coupon valido, hai diritto ad uno sconto del 20%";
             }else{
-                document.getElementById("unvalid-coupon").innerHTML = "Coupon non valido. Peccato hai perso uno sconto del 20%"
+                document.getElementById("unvalid-coupon").innerHTML = "Coupon non valido. Peccato hai perso uno sconto del 20%";
+
             }
-            
+            document.getElementById("scritta-prezzo-finale").innerHTML = "Il prezzo finale del tuo panino è  "  + costoBase + "&euro;";
         }
 
-        document.getElementById("scritta-prezzo-finale").innerHTML = "Il prezzo finale del tuo panino è  "  + costoBase + "&euro;";
+        
 
 
     })
